@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "aura": {
+      "command": "C:\\Users\\Tanvi Singhal\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "args": [
+        "-m",
+        "automation.mcp"
+      ],
+      "cwd": "C:\\Users\\Tanvi Singhal\\.gemini\\antigravity\\scratch\\AURA",
+      "env": {
+        "PYTHONPATH": "C:\\Users\\Tanvi Singhal\\.gemini\\antigravity\\scratch\\AURA",
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}

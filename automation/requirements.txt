@@ -1,6 +1,21 @@
+# Core UI Automation & Input
 pywinauto>=0.6.8
 pyautogui>=0.9.54
+pyperclip>=1.8.2
+Pillow>=10.0.0
+
+# Backend & Web API
 flask>=3.0.0
 flask-cors>=4.0.0
-Pillow>=10.0.0
 python-dotenv>=1.0.0
+
+# Model Context Protocol (MCP)
+mcp>=1.0.0
+
+# Optional: LLM Orchestrator & Browser Automation
+google-genai>=0.1.0
+playwright>=1.40.0
+
+# Development & Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

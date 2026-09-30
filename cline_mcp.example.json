@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "aura": {
+      "command": "C:\\Users\\Tanvi Singhal\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "args": [
+        "-m",
+        "automation.mcp"
+      ],
+      "cwd": "C:\\Users\\Tanvi Singhal\\.gemini\\antigravity\\scratch\\AURA",
+      "env": {
+        "PYTHONPATH": "C:\\Users\\Tanvi Singhal\\.gemini\\antigravity\\scratch\\AURA"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "aura_list_agents",
+        "aura_get_agent_info",
+        "aura_list_windows",
+        "aura_inspect_window",
+        "aura_find_element",
+        "aura_get_app_map"
+      ]
+    }
+  }
+}

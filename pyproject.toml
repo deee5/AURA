@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aura-automation"
+version = "1.0.0"
+description = "AURA — Agentic UI Routing Assistant: Desktop & Browser Automation with Model Context Protocol (MCP)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "AURA Contributors"}
+]
+keywords = [
+    "mcp",
+    "model-context-protocol",
+    "automation",
+    "ui-automation",
+    "pywinauto",
+    "playwright",
+    "claude-desktop",
+    "cursor",
+    "antigravity",
+    "desktop-agent"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: Microsoft :: Windows",
+]
+dependencies = [
+    "pywinauto>=0.6.8",
+    "pyautogui>=0.9.54",
+    "pyperclip>=1.8.2",
+    "flask>=3.0.0",
+    "flask-cors>=4.0.0",
+    "Pillow>=10.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+mcp = [
+    "mcp>=1.0.0",
+]
+llm = [
+    "google-genai>=1.0.0",
+]
+browser = [
+    "playwright>=1.40.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[project.scripts]
+aura-mcp = "automation.mcp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["automation*"]
